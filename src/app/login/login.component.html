@@ -1,0 +1,45 @@
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+</head>
+<app-login-background></app-login-background>
+<body>
+
+<div class="right">
+  <div class="login">
+    <div class="heading">
+      <h3>FlexIt</h3>
+      <p>Welcome to Active Pulse</p>
+    </div>  
+    <div class="contents">
+      <form [formGroup]="form" (submit)="submit()">
+      <div class="form-group">
+        <label for="email">Email</label><br>
+        <input formControlName="Email" class="form-control" type="email" id="email" name="email" required><br><br>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label><br>
+        <input formControlName="Password" type="password" id="password" name="password" required><br><br>
+      </div>
+        <div class="submits">
+        <input type="submit" value="Login" id="buttons" routerLink="/Dashboard">
+        <br><br>
+        <div class="separator"><hr>&nbsp;or&nbsp;<hr></div>
+        <br><br>
+        <span  class="google-signin">
+            <img src="assets/png-transparent-google-logo-google-text-trademark-logo-thumbnail.png" alt="Google" class="google-logo"> <!-- Path to Google logo -->
+            Sign in with Google
+        </span> 
+        <br><br>
+        <div class="sign-up">
+        <p>Don't have an account?</p><p id="highlight" routerLink="/Register">Sign up</p>
+      </div>
+      </div>
+      </form>
+  
+    </div>
+    <br>
+    
+  </div>
+
+</div>
+</body>
