@@ -1,0 +1,31 @@
+html,body{
+    height:100%;
+   
+}
+.left
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:60%;
+    height:100%;
+    background-color: antiquewhite;
+    display: inline-block;
+    overflow: hidden;
+  
+}
+.style-prefix-16i193b
+{
+    height:100%;
+   object-fit: cover;
+   z-index: 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4846cd3b; 
+  }

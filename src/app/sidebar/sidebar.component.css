@@ -1,0 +1,57 @@
+.right-sidebar {
+    position: fixed;
+    padding:30px;
+    top: 0;
+    right: 0;
+    width: 350px; /* Initial width */
+    height: 100%; /* Full height */
+    background-color: #4946CD; /* Background color */
+    transition: width 0.3s ease-in-out; /* Smooth transition */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    display: flex;
+    justify-content:center ;
+    
+}
+
+/* Styles for sidebar content */
+.sidebar-content {
+
+    color: #ffffff; /* Text color */
+    width:300px;
+    height:100px;
+
+}
+
+.calendar-wrapper {
+   width: 200px;
+  
+    height:100px;
+    margin: 8px;
+}
+
+.igx-calendar{
+
+    background-color: #4946CD;
+}
+
+.igx-calendar__header{
+    display:none !important;
+}
+
+.igx-calendar-picker 
+{
+    display: none !important;
+
+}
+
+.igx-calendar, .igx-calendar--vertical 
+{
+    background: #4946CD !important;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .right-sidebar {
+        width: 0%; /* Full width on smaller screens */
+    }
+}

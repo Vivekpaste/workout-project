@@ -1,0 +1,54 @@
+body
+{
+    padding-left:20px;
+    padding-bottom:30px;
+    overflow: hidden;
+}
+.upper
+{
+    display: flex;
+    align-items: center;
+}
+.back
+{
+    margin-top:15px;
+    height: 30px;
+}
+
+.wish
+{
+    margin-left:20px;
+    font-size:25px ;
+    font-weight:600;
+}
+
+.content
+{
+    display: flex;
+    margin-left:7%;
+    margin-top:5%;
+    align-items: center;
+}
+
+.left
+{
+
+    background-color: #d9d9d9;
+    height:350px;
+    width:30%;
+    border-radius: 23px;
+}
+
+.left{
+    display: flex;
+    
+}
+
+.right
+{
+    margin-left:70px;
+    background-color: #d9d9d9;
+    height:350px;
+    width:30%;
+    border-radius: 23px;
+}

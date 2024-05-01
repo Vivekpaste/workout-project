@@ -1,0 +1,35 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+  </head>
+  <body>
+<div class="right">
+    <div class="Register">
+        <div class="heading">
+            <h3>FlexIt</h3>
+            <p>Welcome to Active Pulse</p>
+            <h4>Register</h4><br>
+          </div>  
+        <div class="content">
+    
+            <form [formGroup]="form" (submit)="submit()">
+                <label for="fullname">Full Name</label><br>
+                <input formControlName="FullName" class="form-control" type="text" name="Fullname" required><br><br>
+                <label for="email">Email</label><br>
+                <input formControlName="Email" class="form-control" type="email" name="Email" required><br><br>
+                <label for="password">Password</label><br>
+                <input formControlName="Password" class="form-control" type="password"><br><br>
+                <label>Phone number</label><br>
+                <input type="text"><br><br>
+                <label>Country</label><br>
+                <input type="text"><br><br>
+            <div class="submits">
+                <input type="submit" value="Register" id="buttons">
+                <br><br>
+            </div>
+                
+            </form>
+        </div>
+        
+    </div>
+</div>
+</body>

@@ -1,0 +1,121 @@
+body
+{
+    padding-left:20px;
+    padding-bottom:30px;
+    overflow: hidden;
+}
+
+.upper
+{
+    display: flex;
+    align-items: center;
+}
+.back
+{
+    margin-top:15px;
+    height: 30px;
+}
+.wish
+{
+    margin-left:25px;
+    font-size:25px ;
+    font-weight:600;
+}
+
+.pull
+{
+    background:linear-gradient(to top,#6a4fa0,#3431df);
+   
+    height: 175px;
+    width:75.5%;
+    border-radius:23px;
+}
+.pull:hover
+{
+    background:linear-gradient(to top,#9278c5,#5553d4);
+}
+
+.pull
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+}
+
+.pull-content
+{
+    font-size: 45px;
+}
+
+.pull_pic
+{
+    position: relative;
+    left:300px;
+    top:0px;
+    height:250px
+}
+
+.push
+{
+    background:linear-gradient(to top,#6AC9FF,#026DD1);
+    height: 175px;
+    width:75.5%;
+    border-radius:23px;
+}
+.push
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+}
+
+.push:hover
+{
+    background:linear-gradient(to top,#6AC9FF,#459bec);
+}
+
+.push_pic
+{
+    position: relative;
+    right:300px;
+    top:-27px;
+    height:230px
+}
+
+.legs
+{
+    background-color: #d9d9d9;
+    height: 175px;
+    width:75.5%;
+    border-radius:23px;
+}
+
+.legs:hover{
+    background-color: #e6e5e5;
+}
+
+.legs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+}
+
+.legs-content
+{
+    position: relative;
+    font-size:45px;
+    color:black;
+}
+
+.legs_pic
+{
+    position: relative;
+    left:300px;
+    top:-27px;
+    height:370px;
+    width:400px;
+}

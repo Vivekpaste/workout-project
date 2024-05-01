@@ -1,0 +1,154 @@
+html,body{
+    height:100%;
+   
+}
+.left
+{
+    position: absolute;
+    top:0;
+    left:0;
+    width:60%;
+    height:100%;
+    background-color: antiquewhite;
+    display: inline-block;
+    overflow: hidden;
+  
+}
+.style-prefix-16i193b
+{
+    height:100%;
+   object-fit: cover;
+   z-index: 0;
+}
+
+.right
+{
+    position: absolute;
+    top:0;
+    right:0;
+    width:40%;
+    height:90%;
+    background-color:#ffffff;
+  
+}
+
+.right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:100%;
+}
+.login
+{
+    margin-top:-13%;
+    height: auto;
+    width:540px;
+}
+.contents
+{
+    margin-top:7%;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+.heading
+{
+    text-align: center;
+}
+.heading p{
+    letter-spacing:4px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+}
+
+.login input
+{
+    border-radius: 8px;
+    background-color: #D9D9D9;
+    width:100%;
+    height:25px;
+    border: none;
+}
+
+
+.right h3{
+    font-size: 45px;
+    color:#000000;
+    margin-top:150px;
+    font-family: 'Inter',sans-serif;
+    letter-spacing: 15px;
+}
+#buttons{
+    background-color: #4946CD;
+    color:white;
+    width:80%;
+    padding:5px;
+    height:10%;
+    border-radius: 50px;
+}
+
+#buttons:hover{
+    background-color: #6260da;
+}
+
+.submits
+{
+    text-align:center;
+
+}
+
+.separator{
+    display: flex;
+}
+.separator hr{
+    margin-top:12px;
+    width:126px;
+    background-color: #000000;
+    height:2px;
+}
+
+.google-signin {
+    text-align: center;
+    margin:10px 0;
+    width: 100%;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .google-signin:hover {
+    color:#d90404;
+  }
+  
+  /* Google logo styles */
+  .google-logo {
+    width: 20px;
+    margin-right: 10px;
+    margin-top:px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4846cd3b; 
+  }
+
+.sign-up
+{
+    display: flex;
+    justify-content: center;
+    margin-top:-20px;
+}
+#highlight:hover
+{
+    color:#d90404;
+}

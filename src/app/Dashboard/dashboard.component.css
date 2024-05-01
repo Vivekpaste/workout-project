@@ -1,0 +1,233 @@
+body
+{
+    padding-left:20px;
+    padding-bottom:30px;
+}
+
+.wish
+{
+    font-size:25px ;
+    font-weight:600;
+}
+
+/* Styles for the first row */
+.first-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+
+
+/* Styles for the view workout container */
+.view-workout {
+    flex: 1 1 auto;
+    min-width: 100px;
+    max-width: 35%;
+    min-height: 180px;
+    height: auto;
+    background: url("src/assets/fitness-background-sport-equipment-gym-home-workout-blue-top-view-copyspace-142643828.webp") no-repeat center center;
+    background-size: cover; /* Ensure the image covers the entire container */
+    display: flex;
+
+
+    border-radius: 23px;
+}
+
+.view-workout button{
+    border-radius: 50px;
+    height:30px;
+    margin-top:20%;
+    margin-left:75%;
+}
+
+
+/* Styles for the weight calculator container */
+.weight-cal {
+    flex: 1 1 auto; /* Flex-grow, flex-shrink, flex-basis */
+    min-width: 50px; /* Define a minimum width */
+    max-width: 17%; /* Set a maximum width */
+    min-height: 180px;
+    display: grid;
+    place-items: center;
+    border-radius: 23px;
+    
+}
+.ps
+{
+    margin-bottom: -80px;
+    font-size: 35px !important;
+}
+
+.weight-cal p
+{
+    font-size:20px;
+    color: white;
+   font-weight: 500;
+}
+
+#weight
+{
+    background:linear-gradient(to top,#6AC9FF,#026DD1)
+}
+
+#cal
+{
+    background:linear-gradient(to bottom,#761CE8,#AAA2FF)
+}
+
+/* Styles for the second row */
+.second-row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Styles for the display container */
+.displays {
+    flex: 1 1 auto;
+    min-width: 100px;
+    max-width: 38%;
+    min-height: 190px;
+    height: auto;
+    background:url("src/assets/pull.webp") no-repeat center center;
+    background-size:cover;
+         /* Center the background horizontally and move it 20% from the top */
+         background-position: center 80%;
+    
+         /* Ensure the background image is not repeated */
+         background-repeat: no-repeat;
+    border-radius: 23px;
+
+}
+
+.displays
+{
+    display: flex;
+    align-items: center;
+}
+
+.displays h4{
+    color:white;
+    margin-left:10%;
+    margin-top:-0%;
+    font-weight: 600;
+    font-family:sans-serif;
+}
+
+/* Styles for the run-cycle container */
+.run-cycle {
+    flex: 1 1 auto;
+    min-width: 50px;
+    max-width: 15.5%;
+    min-height: 190px;
+    border-radius: 23px;
+}
+
+.run-cycle
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#run {
+    background: url("src/assets/run.jpg") no-repeat center center;
+    background-size: cover;
+    background-position: center 40%;
+}
+
+#run h4
+{
+    margin-top:-5%;
+ 
+    font-weight: 600;
+    color:white;
+}
+
+#run h5
+{
+    font-weight: 600;
+    color:white;
+    margin-top: 42%;
+}
+
+#cycle {
+    background: url("src/assets/cycle.jpeg") no-repeat center center;
+    background-size: cover;
+         /* Center the background horizontally and move it 20% from the top */
+         background-position: center 20%;
+    
+         /* Ensure the background image is not repeated */
+         background-repeat: no-repeat;
+         border: #026DD1 1px;
+}
+#cycle h4{
+    display: flex;
+    justify-content: center;
+    margin-left:59%;
+    font-weight: 600 !important;
+    font-size:25px;
+    margin-top:-2%; ;
+}
+#cycle h6{
+    display: flex;
+    justify-content: center;
+    margin-left:59%;
+    font-weight: 600 !important;
+    font-size:px;
+    margin-top:-0%; ;
+}
+
+.third-row
+{
+    display:flex;
+    flex-direction: row;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.warm-up
+{
+    flex: 1 1 auto;
+    min-width:100px;
+    max-width:35.5%;
+    min-height:170px;
+   
+    background:url("src/assets/new-wamr-up (1).webp") no-repeat  ;
+    /* background-size: 0% auto;
+    background-position: 50% 80%;; */
+    border-radius:23px;
+}
+
+.warm-up
+{
+    background-color: #46B5B6; 
+    display:flex;
+    align-items: center;
+    justify-content:right;
+}
+#warm h4{
+    margin-top: -0%;
+    margin-right:20%;
+    font-weight:600;
+    color:white
+    
+}
+
+
+/* Media query for screens smaller than 768px (typical phone screens) */
+@media (max-width: 768px) {
+    .first-row, .second-row {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+    }
+    .view-workout, .weight-cal, .displays, .run-cycle {
+        max-width: 100%; /* Set max width to 100% for smaller screens */
+    }
+}
+
+

@@ -1,0 +1,43 @@
+<app-sidebar></app-sidebar>
+<body>
+<p class="wish">Good Morning, Welcome back, {{Name}}<br></p>
+
+<div class="first-row">
+<div class="view-workout">
+    <button routerLink="/view-workout">View Workout</button>
+</div>
+<div class="weight-cal" id="weight">
+    <p class="ps">75</p>
+    <p>Weight</p>
+</div>
+<div class="weight-cal" id="cal">
+    <p class="ps">- 1200</p>
+    <p>Calories</p>
+</div>
+</div>
+
+<p class="wish">Today's Workout</p>
+
+<div class="second-row">
+    <div class="displays" *ngIf="workoutType">
+        <h4>{{workoutType}}</h4>
+    </div>
+
+    <div class="run-cycle" id="run">
+     <h4>Run</h4>
+     <h5>10 mins</h5>
+    </div>
+    <div class="run-cycle" id="cycle">
+        <h4>Cycling </h4>
+        <h6>10 mins</h6>
+    </div>
+</div>
+
+<div class="third-row">
+    <div class="warm-up" id="warm">
+        <h4>Warm-Up</h4></div>
+    <div class="warm-up">
+        
+    </div>
+</div>
+</body>
