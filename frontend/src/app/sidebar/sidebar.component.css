@@ -32,6 +32,7 @@
 .igx-calendar{
 
     background-color: #4946CD;
+    height:400px;
 }
 
 .igx-calendar__header{

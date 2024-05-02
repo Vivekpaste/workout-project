@@ -33,22 +33,58 @@ body
 .left
 {
 
-    background-color: #d9d9d9;
+    background-color: #5cbad1;
     height:350px;
     width:30%;
     border-radius: 23px;
+    box-shadow: 2px 2px 5px #000000c3;
 }
 
-.left{
-    display: flex;
-    
+.left:hover{
+    background-color: #80bac9;
 }
+
+
 
 .right
 {
     margin-left:70px;
-    background-color: #d9d9d9;
+    background-color:#7d24f2;
     height:350px;
     width:30%;
     border-radius: 23px;
+    box-shadow: 2px 2px 5px #000000c3;
+}
+.right:hover{
+    background-color: #9455e7;
+}
+
+
+
+#labels
+{
+    color:white;
+    font-weight: 700;
+    text-shadow: 
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+    text-align:center;
+}
+
+.left .pull_pic
+{
+    height:230px;
+    position: absolute;
+    bottom:245px;
+    left:140px;
+}
+
+.right .pull_pic
+{
+    position: absolute;
+    bottom:245px;
+    right:560px;
+    height:230px;
 }

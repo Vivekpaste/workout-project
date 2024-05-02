@@ -30,8 +30,7 @@ body
     background: url("src/assets/fitness-background-sport-equipment-gym-home-workout-blue-top-view-copyspace-142643828.webp") no-repeat center center;
     background-size: cover; /* Ensure the image covers the entire container */
     display: flex;
-
-
+    box-shadow: 2px 2px 5px #000000c3;
     border-radius: 23px;
 }
 
@@ -52,6 +51,7 @@ body
     display: grid;
     place-items: center;
     border-radius: 23px;
+    box-shadow: 2px 2px 5px #000000c3;
     
 }
 .ps
@@ -100,7 +100,7 @@ body
          /* Ensure the background image is not repeated */
          background-repeat: no-repeat;
     border-radius: 23px;
-
+    box-shadow: 2px 2px 5px #050404;
 }
 
 .displays
@@ -124,6 +124,7 @@ body
     max-width: 15.5%;
     min-height: 190px;
     border-radius: 23px;
+    box-shadow: 2px 2px 5px #000000c3;
 }
 
 .run-cycle
@@ -210,6 +211,7 @@ body
     display:flex;
     align-items: center;
     justify-content:right;
+    box-shadow:2px 2px 5px #000000c3;
 }
 #warm h4{
     margin-top: -0%;

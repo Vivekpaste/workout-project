@@ -29,6 +29,7 @@ body
     height: 175px;
     width:75.5%;
     border-radius:23px;
+    box-shadow: 2px 2px 5px #000000c3;
 }
 .pull:hover
 {
@@ -41,6 +42,7 @@ body
     justify-content: center;
     align-items: center;
     color:aliceblue;
+    box-shadow: 2px 2px 5px #000000c3;
 }
 
 .pull-content
@@ -69,6 +71,7 @@ body
     justify-content: center;
     align-items: center;
     color:aliceblue;
+    box-shadow: 2px 2px 5px #000000c3;
 }
 
 .push:hover
@@ -90,6 +93,7 @@ body
     height: 175px;
     width:75.5%;
     border-radius:23px;
+    box-shadow: 2px 2px 5px #000000c3;
 }
 
 .legs:hover{
