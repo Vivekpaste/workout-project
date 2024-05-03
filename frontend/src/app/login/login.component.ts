@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FormGroup, FormBuilder,Validators } from '@angular/forms';
-import {  OnInit } from '@angular/core';
-
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,32 +9,41 @@ import {  OnInit } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  public greeting="";
-  event:any;
-  form!:FormGroup;
+  public greeting = "";
+  form!: FormGroup;
 
   constructor(
-    private FormBuilder:FormBuilder,
-  )
-  {}
-  ngOnInit():void
-  {
-    this.form=this.FormBuilder.group({
-      Email:['',[Validators.required,Validators.email]],
-      Password:['',[Validators.required]]
-    })
+    private formBuilder: FormBuilder,
+    private http: HttpClient,
+    private router: Router
+  ) {}
+
+  ngOnInit(): void {
+    this.form = this.formBuilder.group({
+      Email: ['', [Validators.required, Validators.email]],
+      Password: ['', [Validators.required]]
+    });
   }
-  onClick(value:any)
-  {
-    
-    this.greeting="Welcome";
-    console.log(value);
-  }
-  submit()
-  {
-    if(this.form.valid){
-    let user=this.form.getRawValue();
-    console.log(user);
+
+  submit() {
+    if (this.form.valid) {
+      const apiUrl = 'http://localhost:4200/login';
+      const formData = this.form.value;
+      console.log("fwfew",formData);
+      this.http.post(apiUrl, formData)
+        .subscribe(
+          (response) => {
+            console.log('Login successful', response);
+            // Redirect the user to the dashboard upon successful login
+            this.router.navigate(['/Dashboard']);
+          },
+          (error) => {
+            console.error('Login failed', error);
+            // Handle error response here
+          }
+        );
+    } else {
+      console.error('Form validation failed');
     }
   }
 }

@@ -22,7 +22,12 @@ export class WorkoutService {
         return WorkoutType.Push;
       case 3: // Wednesday
         return WorkoutType.Legs;
-      // Add more cases for other days if needed
+      case 4: // Monday
+        return WorkoutType.Pull;
+      case 5: // Tuesday
+        return WorkoutType.Push;
+      case 6: // Wednesday
+        return WorkoutType.Legs;
       default:
         return WorkoutType.Rest; // Default to Pull on other days
     }

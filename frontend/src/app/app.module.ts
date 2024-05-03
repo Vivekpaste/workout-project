@@ -17,6 +17,9 @@ import { ViewWorkoutComponent } from './view-workout/view-workout.component';
 import { PullComponent } from './pull/pull.component';
 import { PushComponent } from './push/push.component';
 import { LegsComponent } from './legs/legs.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
 
@@ -41,10 +44,14 @@ import { LegsComponent } from './legs/legs.component';
     HammerModule,
     FullCalendarModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
     
   ],
+  exports:
+  [LoginComponent],
+
   providers: [],
   bootstrap: [AppComponent]
 })
