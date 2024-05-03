@@ -16,21 +16,31 @@ export class RegisterComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.FormBuilder.group({
-      FullName: ['', [Validators.required]],
-      Email: ['', [Validators.required, Validators.email]],
-      Password: ['', [Validators.required]],
-      PhoneNumber: [''],
-      Country: ['']
+      name: ['', [Validators.required]],
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required]],
+      phone: [''],
+      country: ['']
     });
   }
   submit() {
     if (this.form.valid) {
       // Assuming your API endpoint is 'https://your-api-url.com/register'
-      const apiUrl = 'http://localhost:4200/Register';
-      const formData = this.form.value;
-
+      const apiUrl = 'http://localhost:8000/api/register';
+      const formdata = this.form.value;
+      // const formdata={
+      //   "email":"whyddchhi@h.com",
+      //   "password":"h",
+      //   "age":12,
+      //   "height":45,
+      //   "weight":86,
+      //   "name":"shaun",
+      //   "country":"india",
+      //   "phone":9876533483210
+      // }
+      console.log(formdata);
       // Send form data to the API
-      this.http.post(apiUrl, formData)
+      this.http.post(apiUrl, formdata)
         .subscribe(
           (response) => {
             // Handle success response

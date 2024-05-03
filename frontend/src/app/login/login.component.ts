@@ -20,14 +20,14 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      Email: ['', [Validators.required, Validators.email]],
-      Password: ['', [Validators.required]]
+      email: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required]]
     });
   }
 
   submit() {
     if (this.form.valid) {
-      const apiUrl = 'http://localhost:4200/login';
+      const apiUrl = 'http://localhost:8000/api/login';
       const formData = this.form.value;
       console.log("fwfew",formData);
       this.http.post(apiUrl, formData)

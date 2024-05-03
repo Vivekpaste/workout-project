@@ -14,17 +14,17 @@
     
             <form [formGroup]="form" (submit)="submit()">
                 <label for="fullname">Full Name</label><br>
-                <input formControlName="FullName" class="form-control" type="text" name="Fullname" required><br><br>
+                <input formControlName="name" class="form-control" type="text" name="Fullname" required><br><br>
                 <label for="email">Email</label><br>
-                <input formControlName="Email" class="form-control" type="email" name="Email" required><br><br>
+                <input formControlName="email" class="form-control" type="email" name="Email" required><br><br>
                 <label for="password">Password</label><br>
-                <input formControlName="Password" class="form-control" type="password"><br><br>
+                <input formControlName="password" class="form-control" type="password"><br><br>
                 <label>Phone number</label><br>
-                <input type="text"><br><br>
+                <input formControlName="phone"type="number"><br><br>
                 <label>Country</label><br>
-                <input type="text"><br><br>
+                <input formControlName="country"type="text"><br><br>
             <div class="submits">
-                <input type="submit" value="Register" id="buttons" routerLink="/Dashboard">
+                <input type="submit" value="Register" id="buttons" >
                 <br><br>
             </div>
                 
