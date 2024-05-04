@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       const apiUrl = 'http://localhost:8000/api/login';
       const formData = this.form.value;
       console.log("fwfew",formData);
-      this.http.post(apiUrl, formData)
+      this.http.post(apiUrl, formData,{withCredentials:true})
         .subscribe(
           (response) => {
             console.log('Login successful', response);
