@@ -58,7 +58,7 @@ body
 }
 
 .right:hover{
-    background-color: #f5f54a;
+    background-color: #f1f176;
 }
 
 #labels
@@ -72,20 +72,28 @@ body
     1px 1px 0 #000; 
     text-align:center;
     font-size:40px;
+    position: relative;
+    bottom: 350px;
+}
+
+.left #labels
+{
+    position: relative;
+    top:-240px;
 }
 
 .left .pull_pic
 {
     height:230px;
-    position: absolute;
-    bottom:245px;
-    left:140px;
+    position: relative;
+    bottom:-80px;
+    left:0px;
 }
 
 .right .pull_pic
 {
-    position: absolute;
-    bottom:215px;
-    right:590px;
+    position: relative;
+    bottom:0px;
+    right:-100px;
     height:340px;
 }

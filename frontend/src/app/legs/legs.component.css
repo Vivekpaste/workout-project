@@ -55,12 +55,13 @@ body
     width:30%;
     border-radius: 23px;
     box-shadow: 2px 2px 5px #000000c3;
+    display: flex;
+    justify-content: center;
 }
 
 .right:hover{
     background-color: #f5f54a;
 }
-
 
 
 
@@ -76,20 +77,34 @@ body
     1px 1px 0 #000; 
     text-align:center;
     font-size:40px;
+    position: relative;
+    bottom: 350px;
+}
+
+.left #labels
+{
+    position: relative;
+    top:-240px;
+}
+
+.right #labels
+{
+    position: relative;
+    top:-350px;
 }
 
 .left .pull_pic
 {
     height:230px;
-    position: absolute;
-    bottom:245px;
-    left:140px;
+    position: relative;
+    bottom:-85px;
+    left:0px;
 }
 
 .right .pull_pic
 {
-    position: absolute;
-    bottom:185px;
-    right:520px;
-    height:400px;
+    position: relative;
+    bottom:-10px;
+    right:-50px;
+    height:340px;
 }
