@@ -4,6 +4,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IGX_CALENDAR_DIRECTIVES } from 'igniteui-angular';
 import { CalendarOptions } from '@fullcalendar/core';
 import { HttpClient } from '@angular/common/http';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -13,7 +14,7 @@ import { HttpClient } from '@angular/common/http';
   
 })
 export class SidebarComponent {
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient,private router:Router) { }
 
   logout() {
     console.log("#####")
@@ -21,8 +22,9 @@ export class SidebarComponent {
     localStorage.removeItem('authToken');
 
     // Optional: Perform backend cleanup (e.g., invalidate session)
-    this.http.post('/api/logout', {}).subscribe(
+    this.http.post('http://localhost:8000/api/logout', {},{withCredentials:true}).subscribe(
       () => {
+        this.router.navigate(['/']);
         console.log('Logout successful');
       },
       (error) => {
