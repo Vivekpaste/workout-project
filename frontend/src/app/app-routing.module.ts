@@ -7,7 +7,8 @@ import { ViewWorkoutComponent } from './view-workout/view-workout.component';
 import { LegsComponent } from './legs/legs.component';
 import { PushComponent } from './push/push.component';
 import { PullComponent } from './pull/pull.component';
-
+import { WarmupComponent } from './warmup/warmup.component';
+import { CoolupComponent } from './coolup/coolup.component';
 
 const routes: Routes = [
   {
@@ -38,6 +39,14 @@ const routes: Routes = [
     path:'Legs',
     component:LegsComponent
   },
+  {
+    path:'Warmup',
+    component:WarmupComponent
+  },
+  {
+    path:'Coolup',
+    component:CoolupComponent
+  }
 
 ];
 

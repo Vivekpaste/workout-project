@@ -4,6 +4,12 @@ body
     padding-bottom:30px;
     overflow: hidden;
 }
+.text
+{
+    margin-left:50px;
+    width:1050px;
+    margin-top:60px;
+}
 
 .upper
 {

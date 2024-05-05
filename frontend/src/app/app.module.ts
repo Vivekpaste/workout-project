@@ -18,6 +18,8 @@ import { PullComponent } from './pull/pull.component';
 import { PushComponent } from './push/push.component';
 import { LegsComponent } from './legs/legs.component';
 import { HttpClientModule } from '@angular/common/http';
+import { WarmupComponent } from './warmup/warmup.component';
+import { CoolupComponent } from './coolup/coolup.component';
 
 
 
@@ -34,6 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     PullComponent,
     PushComponent,
     LegsComponent,
+    WarmupComponent,
+    CoolupComponent,
     
   ],
   imports: [
