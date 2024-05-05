@@ -1,0 +1,38 @@
+body
+{
+    padding-left:20px;
+    padding-bottom:30px;
+    overflow: hidden;
+}
+#vid
+{
+    position: relative;
+    left:190px;
+    top:20px;
+}
+.upper
+{
+    display: flex;
+    align-items: center;
+}
+.back
+{
+    margin-top:15px;
+    height: 30px;
+}
+
+.wish
+{
+    margin-left:20px;
+    font-size:25px ;
+    font-weight:600;
+}
+
+.text
+{
+
+    position: relative;
+    left:210px;
+    top:20px;
+    width: 760px
+}
