@@ -38,6 +38,8 @@ body
     width:30%;
     border-radius: 23px;
     box-shadow: 2px 2px 5px #000000c3;
+    display: flex;
+    justify-content: center;
 }
 
 .left:hover{
@@ -54,6 +56,8 @@ body
     width:30%;
     border-radius: 23px;
     box-shadow: 2px 2px 5px #000000c3;
+    display: flex;
+    justify-content: center;
 }
 .right:hover{
     background-color: #9455e7;
@@ -78,27 +82,29 @@ body
 .left #labels
 {
     position: relative;
-    top:-240px;
+    top:0px;
+    left:-50%;
 }
 
 .right #labels
 {
     position: relative;
-    top:-250px;
+    top:0px;
+    right:35%;
 }
 
 .left .pull_pic
 {
     height:230px;
     position: relative;
-    bottom:-85px;
-    left:0px;
+    bottom:-105px;
+    left:50px;
 }
 
 .right .pull_pic
 {
     position: relative;
-    bottom:-65px;
-    right:-50px;
+    bottom:-85px;
+    right:-90px;
     height:240px;
 }

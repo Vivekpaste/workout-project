@@ -39,6 +39,8 @@ body
     width:30%;
     border-radius: 23px;
     box-shadow: 2px 2px 5px #000000c3;
+    display: flex;
+    justify-content: center;
 }
 
 .left:hover
@@ -84,13 +86,15 @@ body
 .left #labels
 {
     position: relative;
-    top:-240px;
+    top:0px;
+    right:200px;
 }
 
 .right #labels
 {
     position: relative;
-    top:-350px;
+    top:0px;
+    left:-180px;
 }
 
 .left .pull_pic
@@ -98,7 +102,7 @@ body
     height:230px;
     position: relative;
     bottom:-85px;
-    left:0px;
+    left:50px;
 }
 
 .right .pull_pic
