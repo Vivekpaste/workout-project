@@ -1,20 +1,18 @@
 html,body{
     height:100%;
-   
+    overflow:auto;
 }
-.left
-{
-    overflow-y: auto;
-    position: absolute;
-    top:0;
-    left:0;
-    width:60%;
-    height:100%;
+.left {
+
+    position: fixed; /* Change to 'fixed' if you want it to be fixed relative to the viewport */
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100vh;
     background-color: antiquewhite;
-    display: inline-block;
-    overflow: hidden;
-  
+
 }
+
 .style-prefix-16i193b
 {
     height:100%;
