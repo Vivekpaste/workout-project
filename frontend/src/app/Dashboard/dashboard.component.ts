@@ -37,8 +37,9 @@ export class DashboardComponent {
   }
 
   getinfo(): void {
-    this.http.get<any>('/api/getinfo/')
+    this.http.get<any>('http://localhost:8000/api/user',{withCredentials:true})
       .subscribe(data => {
+        console.log(data);
         this.name = data.name;
         this.weight=data.weight;
         this.height=data.height;

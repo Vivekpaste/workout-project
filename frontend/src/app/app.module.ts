@@ -20,6 +20,7 @@ import { LegsComponent } from './legs/legs.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WarmupComponent } from './warmup/warmup.component';
 import { CoolupComponent } from './coolup/coolup.component';
+import { PushvideoComponent } from './pushvideo/pushvideo.component';
 
 
 
@@ -38,6 +39,7 @@ import { CoolupComponent } from './coolup/coolup.component';
     LegsComponent,
     WarmupComponent,
     CoolupComponent,
+    PushvideoComponent,
     
   ],
   imports: [

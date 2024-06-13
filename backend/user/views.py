@@ -70,6 +70,8 @@ def user(request):
     serializer = UserSerializer (user)
     return Response(serializer.data)
 
+
+
 @api_view(['POST'])
 def logout(request):
     response = Response()

@@ -9,6 +9,7 @@ import { PushComponent } from './push/push.component';
 import { PullComponent } from './pull/pull.component';
 import { WarmupComponent } from './warmup/warmup.component';
 import { CoolupComponent } from './coolup/coolup.component';
+import { PushvideoComponent } from './pushvideo/pushvideo.component';
 
 const routes: Routes = [
   {
@@ -46,6 +47,10 @@ const routes: Routes = [
   {
     path:'Coolup',
     component:CoolupComponent
+  },
+  {
+    path:"pushvideo",
+    component:PushvideoComponent
   }
 
 ];

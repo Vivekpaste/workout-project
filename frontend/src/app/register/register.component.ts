@@ -51,7 +51,7 @@ export class RegisterComponent implements OnInit {
             // Handle success response
             console.log('Registration successful', response);
             // Optionally, you can redirect the user to the dashboard
-            this.router.navigate(['/Dashboard']);
+            this.router.navigate(['/']);
           },
           (error) => {
             // Handle error response
