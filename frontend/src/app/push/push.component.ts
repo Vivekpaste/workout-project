@@ -22,5 +22,13 @@ export class PushComponent {
       });
     console.log("########");
   }
+  getinfochest(): void {
+    this.http.get<any>('http://localhost:8000/api/model3',{withCredentials:true})
+      .subscribe(data => {
+        console.log("###########");
+
+      });
+    console.log("########");
+  }
 
 }

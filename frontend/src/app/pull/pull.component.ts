@@ -21,4 +21,12 @@ export class PullComponent {
       });
     console.log("########");
   }
+  getinfodead(): void {
+    this.http.get<any>('http://localhost:8000/api/model4',{withCredentials:true})
+      .subscribe(data => {
+        console.log("###########");
+
+      });
+    console.log("########");
+  }
 }
