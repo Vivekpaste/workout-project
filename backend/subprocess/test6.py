@@ -6,7 +6,7 @@ import pickle
 
 mp_drawing=mp.solutions.drawing_utils
 mp_pose=mp.solutions.pose
-with open('/Users/shaunpereira/Desktop/yeshu/github/workout-project/backend/subprocess/deadlift.pkl', 'rb') as f:
+with open('/Users/shaunpereira/Desktop/yeshu/github/workout-project/backend/subprocess/squats.pkl', 'rb') as f:
     model=pickle.load(f)
     
 cap = cv2. VideoCapture (0)
@@ -38,7 +38,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
             X = pd.DataFrame([row], columns=landmarks[1:])
             body_language_class = model.predict(X)[0]
             body_language_prob = model.predict_proba(X)[0]
-            print(body_language_class, body_language_prob)
+            
             
             
             if body_language_class == 'down' and body_language_prob[body_language_prob.argmax()]>=0.55: 
@@ -46,22 +46,23 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
             elif current_stage =='down' and body_language_class =='up' and body_language_prob[body_language_prob.argmax()]>0.55:
                 current_stage="up"
                 counter =counter+1
-                print(current_stage)
+                
 
             cv2. rectangle(image, (0,0), (250, 60), (245, 117, 16), - 1)
 # Display CLass
             cv2. putText (image, 'CLASS',
                     (95,12), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
-            cv2.putText(image, body_language_class.split(' ')[0], (90,40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2,cv2.LINE_AA)
+            cv2.putText(image, body_language_class.split(' ')[0], (85,40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2,cv2.LINE_AA)
             
             cv2. putText(image, 'PROB',(15,12), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
-            cv2. putText(image, str(round(body_language_prob[np.argmax(body_language_prob)], 2)), (10,40), cv2. FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2. LINE_AA)
+            cv2. putText(image, str(round(body_language_prob[np.argmax(body_language_prob)], 2)), (5,40), cv2. FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2. LINE_AA)
  
  
-            cv2. putText (image, 'COUNT', (180,12), cv2. FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
-            cv2. putText (image,str(counter), (175,40), cv2. FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2,cv2.LINE_AA)
+            cv2. putText (image, 'COUNT', (198,12), cv2. FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
+            cv2. putText (image,str(counter), (220,40), cv2. FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2,cv2.LINE_AA)
             if counter >= 10:
                 break
+            
         
         except Exception as e:
             print(e)

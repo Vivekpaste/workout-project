@@ -45,5 +45,15 @@ export class DashboardComponent {
         this.height=data.height;
       });
   }
+  getCalories(): void {
+    this.http.get<number>('http://localhost:8000/api/calories', { withCredentials: true })
+    .subscribe(data => {
+        this.totalCalories += data; // Add the fetched number to the total
+      },
+      error => {
+        console.error('Error fetching calories:', error);
+      }
+    );
+  }
 
 }
